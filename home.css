@@ -1,0 +1,310 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #8b2c2a;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.title-text h1 {
+    font-size: 36px;
+    color: white;
+}
+
+.title-text p {
+    font-size: 18px;
+    color: white;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.nav ul li {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.nav ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-color: #0b0b0b;
+}
+
+.nav-icon {
+    width: 36px;
+    height: auto;
+    margin-right: 8px;
+    transition: transform 0.3s;
+}
+
+/* Special Hover Effect */
+.nav ul li:hover .nav-icon {
+    transform: rotate(360deg);
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 40px 0;
+}
+
+.search-bar {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-button,
+.home-button,
+.cases-button {
+    padding: 10px 20px;
+    background-color: #8b2c2a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.search-button:hover,
+.home-button:hover,
+.cases-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* AI Section */
+.ai-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.ai-avatar {
+    flex: 1;
+    text-align: center;
+}
+
+.ai-avatar img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.ai-description {
+    flex: 2;
+    padding: 20px;
+}
+
+.ai-description p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.ai-section h3{
+    color: #8b2c2a;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+/* Contact Us Section */
+.contact-us {
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 20px;
+    margin: 40px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-us h3 {
+    color: #8b2c2a;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact-us p, .contact-us ul {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Footer Section */
+.footer {
+    width: 100%;
+    background-color: #8b2c2a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 14px;
+}
+
+.footer-links li a:hover {
+    color: #f1c40f;
+}
+
+/* Chatbox Styles */
+.chatbox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.chatbox img {
+    width: 60px;
+    height: auto;
+}
+
+.chatbox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-section {
+        margin-bottom: 20px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ai-section {
+        flex-direction: column;
+    }
+
+    .search-section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ai-avatar img {
+        width: 150px;
+    }
+
+    .chatbox {
+        width: 80px;
+        height: 80px;
+    }
+
+    .chatbox img {
+        width: 50px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

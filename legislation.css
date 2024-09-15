@@ -1,0 +1,132 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: white;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 0px;
+    background-color: white;
+}
+
+.logo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+.logo {
+    height: 100px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    font-size: 40px;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #8b2c2a;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+}
+
+.search-bar:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.search-btn, .home-btn {
+    background-color: #431513;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.search-btn:hover, .home-btn:hover {
+    background-color: #5a1b19;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Content Styling */
+main {
+    background-color: #000000;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow for the entire container */
+}
+
+.box {
+    background-color: #d6d6d6;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for each box */
+}
+
+.box img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.box h3 {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.box:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Hover effect for the boxes */
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

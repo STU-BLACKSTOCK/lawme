@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <link rel="stylesheet" href="/css/settings.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="LAWME Logo">
+            <h1>LAWME</h1>
+        </div>
+        <nav>
+            <button class="home-btn"><a href="home.html">HOME</a></button>
+            <button class="advanced-search-btn">Advanced search</button>
+            <input type="text" class="search-bar" placeholder="Search...">
+        </nav>
+    </header>
+
+    <section class="settings-section">
+        <h1>SETTINGS</h1>
+        <div class="settings-container">
+            <!-- Language Dropdown -->
+            <div class="dropdown-container">
+                <label for="language">LANGUAGE:</label>
+                <select id="language" class="dropdown">
+                    <option value="en">English</option>
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="hi">Hindi</option>
+                    <option value="zh">Chinese</option>
+                    <!-- Add more languages as needed -->
+                </select>
+            </div>
+
+            <!-- PIN Dropdown -->
+            <div class="dropdown-container">
+                <label for="pin">EDIT PIN:</label>
+                <select id="pin" class="dropdown">
+                    <option value="1234">1234</option>
+                    <option value="5678">5678</option>
+                    <!-- Add more pin options as needed -->
+                </select>
+            </div>
+
+            <button class="settings-btn">HISTORY</button>
+            <button class="settings-btn">ALERTS</button>
+            <button class="settings-btn">PRIVACY</button>
+            <button class="signout-btn"><a href="login.html">SIGN OUT</a></button>
+        </div>
+    </section>
+
+    <script src="/js/settings.js"></script>
+</body>
+</html>

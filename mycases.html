@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAWME - My Cases</title>
+    <link rel="stylesheet" href="/css/mycases.css"> <!-- Corrected Path -->
+</head>
+<body>
+    <header class="header">
+        <div class="logo-section">
+            <img src="/images/logo.png" alt="LAWME Logo" class="logo"> <!-- Corrected Path -->
+            <div class="title-text">
+                <h1>LAWME</h1>
+                <p>Law portal of India</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><img src="/images/profile.png" alt="Profile" class="nav-icon"><span><a href="/profile.html">PROFILE</a></span></li>
+                <li><img src="/images/legis.png" alt="Legislation" class="nav-icon"><span><a href="/legislation.html">LEGISLATION</a></span></li>
+                <li><img src="/images/service.png" alt="Services" class="nav-icon"><span><a href="/services.html">SERVICES</a></span></li>
+                <li><img src="/images/bell.png" alt="Reminder" class="nav-icon"><span><a href="/reminder.html">REMINDER</a></span></li>
+                <li><img src="/images/set.png" alt="Settings" class="nav-icon"><span><a href="/settings.html">SETTINGS</a></span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search-section">
+        <h2>MY CASES</h2>
+        <div class="search-group">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <button class="search-button">Advanced Search</button>
+            <button class="add-button" onclick="openPopup()">ADD</button>
+            <button class="home-button"><a href="/home.html">HOME</a></button>
+        </div>
+    </div>
+
+    <section class="cases-section">
+        <div class="cases-column pending">
+            <h3>PENDING</h3>
+            <div id="pending-cases-list"></div>
+            <p id="pending-empty-message" class="empty-message">No pending cases available.</p>
+        </div>
+        <div class="cases-column solved">
+            <h3>SOLVED</h3>
+            <div id="solved-cases-list"></div>
+            <p id="solved-empty-message" class="empty-message">No solved cases available.</p>
+        </div>
+    </section>
+
+    <!-- Popup Form for Adding New Case -->
+    <div class="popup-form" id="popupForm" style="display:none;">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h3>Add New Case</h3>
+            <form id="caseForm" enctype="multipart/form-data">
+                <input type="text" id="case-number" placeholder="Case Number" name="case-number" required>
+                <textarea id="description" name="description" placeholder="Case Description" required></textarea>
+                <label>Upload Document:</label>
+                <input type="file" id="documents" name="documents" accept=".pdf,.doc,.docx" multiple>
+                <label>Upload Image:</label>
+                <input type="file" name="images" id="images" accept="image/*" multiple>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Case Detail Popup -->
+    <div class="popup-form" id="caseDetailPopup" style="display:none;">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeCaseDetailPopup()">&times;</span>
+            <h3>Case Details</h3>
+            <div id="case-detail-content"></div>
+        </div>
+    </div>
+
+    <script src="/js/mycases.js"></script> <!-- Corrected Path -->
+</body>
+</html>

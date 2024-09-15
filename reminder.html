@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Reminder</title>
+    <link rel="stylesheet" href="/css/reminder.css">
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="logo.png" alt="LAWME Logo" class="logo">
+            <h1>REMINDER</h1>
+        </div>
+        <div class="nav-buttons">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <button class="nav-btn">Advanced search</button>
+            <button class="nav-btn"><a href="home.html" >HOME</a></button>
+            <button class="nav-btn" onclick="openAddReminderPopup()">Add Reminder</button>
+        </div>
+    </header>
+
+    <!-- Reminder Form Popup -->
+    <div id="addReminderPopup" class="popup">
+        <form class="popup-form">
+            <h2>Add Reminder</h2>
+            <label for="reminder-update">Update:</label>
+            <input type="text" id="reminder-update" required>
+            <label for="reminder-time">Time:</label>
+            <input type="time" id="reminder-time" required>
+            <label for="reminder-date">Date:</label>
+            <input type="date" id="reminder-date" required>
+            <label for="reminder-place">Place:</label>
+            <input type="text" id="reminder-place" required>
+            <button type="button" onclick="addReminder()">Submit</button>
+            <button type="button" onclick="closeAddReminderPopup()">Cancel</button>
+        </form>
+    </div>
+
+    <section class="updates-section">
+        <div class="updates-header">
+            <div>UPDATE</div>
+            <div>TIME</div>
+            <div>PLACE</div>
+            <div>STATUS</div>
+        </div>
+        <div id="case-list">
+            <!-- Case details will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <script src="/js/reminder.js"></script>
+</body>
+</html>

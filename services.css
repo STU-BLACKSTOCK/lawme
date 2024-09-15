@@ -1,0 +1,161 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: black;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: px;
+    background-color: white;
+}
+
+.logo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+.logo {
+    height: 70px;
+    margin-right: 10px;
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    font-size: 40px;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #8b2c2a;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.search-bar {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+}
+
+.search-bar:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.search-btn, .home-btn {
+    background-color: #431513;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.search-btn:hover, .home-btn:hover {
+    background-color: #5a1b19;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Layout Styling */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar-btn {
+    background-color: #d6d6d6;
+    text-decoration: none;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-btn:hover {
+    background-color: #bcbcbc;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* FAQ Section Styling */
+.faq-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    margin-left: 50px;
+}
+
+.faq-section h2 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.faq-container {
+    background-color: #e0e0e0;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.faq-item {
+    background-color: #b0b0b0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.faq-item:hover {
+    background-color: #8b8b8b;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

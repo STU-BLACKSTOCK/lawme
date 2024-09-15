@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Page</title>
+    <link rel="stylesheet" href="/css/services.css">
+    <style>
+        /* Additional CSS for FAQ Section */
+        .faq-item {
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            color: black; /* Changed text color to black */
+        }
+        
+        .faq-answer {
+            display: none;
+            margin: 5px 0;
+            padding: 10px;
+            background-color: #e0e0e0;
+            border-left: 3px solid #333;
+            color: black; /* Changed text color to black */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="logo.png" alt="LAWME Logo" class="logo">
+            <h1>LAWME</h1>
+        </div>
+        <nav>
+            <h2>SERVICES</h2>
+            <div class="search-container">
+                <input type="text" placeholder="Search services..." class="search-bar">
+                <button class="search-btn">Advanced search</button>
+                <button class="home-btn" ><a href="home.html">HOME</a></button>
+                
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <button class="sidebar-btn"><a href="legal.pdf">LEGAL AID</a></button>
+            <button class="sidebar-btn"><a href="forms.pdf">COURT FORMS</a></button>
+            <button class="sidebar-btn"><a href="https://law.karnataka.gov.in/info-4/Commercial+Courts/Notification+Information+And+orders+relating+to+commercial+courts/en">NOTICES</a></button>
+            <button class="sidebar-btn"><a href="ruless.pdf">RULES & POLICIES</a></button>
+        </aside>
+
+        <section class="faq-section">
+            <h2>FAQ's</h2>
+            <div class="faq-container">
+                <div class="faq-item" onclick="toggleAnswer(1)">What is a commercial court?</div>
+                <div id="faq-answer-1" class="faq-answer">A commercial court deals with business-related disputes, including intellectual property, contract enforcement, and other financial disputes.</div>
+
+                <div class="faq-item" onclick="toggleAnswer(2)">How to change my profile picture?</div>
+                <div id="faq-answer-2" class="faq-answer">To change your profile picture, go to your profile, select 'Edit Profile', and upload a new image.</div>
+
+                <div class="faq-item" onclick="toggleAnswer(3)">Where can I see my solved cases?</div>
+                <div id="faq-answer-3" class="faq-answer">You can view your solved cases in the 'MY CASES' section of your account dashboard.</div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // JavaScript to toggle FAQ answers
+        function toggleAnswer(faqNumber) {
+            const answer = document.getElementById(`faq-answer-${faqNumber}`);
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+
+    <script src="/js/services.js"></script>
+</body>
+</html>

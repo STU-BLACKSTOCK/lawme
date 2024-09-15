@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-section">
+            <img src="logo.png" alt="LAWME Logo" class="logo">
+            <div class="title-text">
+                <h1>LAWME</h1>
+                <p>Law portal of India</p>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><button class="home-btn"><a href="home.html" >HOME</a></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="profile-section">
+        <h1>PROFILE</h1>
+        <div class="profile-container">
+            <div class="profile-image-container">
+                <img src="profile.png" alt="Profile Image" id="profile-img">
+                <label for="profile-upload" class="edit-icon">
+                    <img src="pen.png" alt="Edit Icon">
+                </label>
+                <input type="file" id="profile-upload" accept="image/*" style="display: none;">
+            </div>
+
+            <div class="profile-details">
+                <div class="detail-item">
+                    <button class="edit-btn">
+                        <img src="edit.png" alt="Edit Icon">
+                    </button>
+                    <span>NAME and TITLE</span>
+                </div>
+                <div class="detail-item">
+                    <button class="edit-btn">
+                        <img src="edit.png" alt="Edit Icon">
+                    </button>
+                    <span>PROFESSIONAL QUALIFICATION</span>
+                </div>
+                <div class="detail-item">
+                    <button class="edit-btn">
+                        <img src="edit.png" alt="Edit Icon">
+                    </button>
+                    <span>PRACTICE AREAS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <script src="/js/profile.js"></script>
+</body>
+</html>
+
